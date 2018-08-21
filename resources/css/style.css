@@ -1,0 +1,45 @@
+html {
+
+}
+
+
+/*Header*/
+.header {
+  height: 4rem;
+  background-color: white;
+}
+
+.header img {
+
+}
+
+.header span {
+
+}
+
+.header ul {
+
+}
+
+/*Banner*/
+.banner {
+  display: flex;
+  padding: 32px 24px;
+}
+
+.banner img {
+  padding: 0 24px;
+  width: 60%;
+}
+
+.banner div .banner-right h1 {
+  font-family:
+}
+
+.banner div .banner-right p {
+  font-family:
+}
+
+.banner div .banner-right button {
+  font-family: 
+}
