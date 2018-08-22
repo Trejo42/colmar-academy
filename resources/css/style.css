@@ -89,10 +89,7 @@ header ul li {
 .information {
   display: flex;
   font-family: "work sans", helvetica, sans-serif;
-}
-
-.information .information-sub {
-  margin: 2rem 1.5rem;
+  color: rgba(100, 140, 150, 1);
 }
 
 .information .sub-information {
@@ -100,18 +97,26 @@ header ul li {
 }
 
 .information #left {
+  padding: 2rem 1.5rem;
   width: 60%;
-  border-right: solid 1px black;
+  border-right: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+.information #left h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 2rem;
 }
 
 .information #right {
   width: 40%;
+  padding: 2rem 0;
 }
 
 .information .sub-information img {
   width: 35%;
   height: auto;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .information .sub-information .content {
@@ -119,10 +124,22 @@ header ul li {
   flex-flow: column;
   width: 65%;
   justify-content: center;
-  line-height: 1.5rem;
 }
 
 .information .sub-information .content h3 {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: bold;
+}
+
+.information .sub-information .content span {
+  margin: .5rem 0;
+  line-height: 1.5rem;
+}
+
+.information .sub-information .content a {
+  text-decoration: none;
+}
+
+.information #lecture {
+  background-color: rgba(0, 0, 0, 0.1);
 }
