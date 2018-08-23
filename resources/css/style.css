@@ -8,9 +8,6 @@ body {
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
-
-
-  border: dotted 1px black;
 }
 
 
@@ -109,8 +106,6 @@ header ul li {
 .information .left {
   width: 60%;
   margin: 2rem 0;
-
-  border: dotted 1px blue;
 }
 
 .information .left img {
@@ -194,9 +189,58 @@ header ul li {
 .learning {
   color: rgb(19, 122, 29);
   font-family: "work sans", helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.learning .container {
+  flex-direction: column;
+  align-items: center;
 }
 
 .learning .title h1 {
   font-size: 1.7rem;
   font-weight: 700;
+  padding: 1.5rem 0;
 }
+
+.learning .courses {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.learning .courses .class {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem 0;
+  background-color: white;
+}
+
+.learning .courses .class .class-img {
+  display: block;
+}
+
+.learning .courses .class img {
+  width: 100%;
+}
+
+.learning .courses .class .class-content {
+  padding: 1rem;
+}
+
+.learning .courses .class h3 {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.learning .courses .class p {
+  padding-top: .5rem;
+  line-height: 1.5;
+  font-size: .8rem;
+}
+
+
+/*Thesis Exhibit*/
