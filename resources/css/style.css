@@ -8,6 +8,8 @@ body {
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
+
+  border: solid 1px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -97,6 +99,7 @@ header ul li {
 
 /*Information Section*/
 .information {
+  background-color: white;
   color: rgb(19, 122, 29);
   font-family: "work sans", helvetica, sans-serif;
 }
@@ -244,3 +247,45 @@ header ul li {
 
 
 /*Thesis Exhibit*/
+.thesis {
+  background-color: white;
+  color: rgb(19, 122, 29);
+  font-family: "work sans", helvetica, sans-serif;
+}
+
+.thesis .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis .title {
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.thesis .title h1 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.thesis .content {
+  display: flex;
+}
+
+
+/*Thesis Left Section*/
+.thesis .content .left {
+  width: 60%;
+}
+
+.thesis .content .left video {
+  width: 100%;
+}
+
+/*Thesis Right Section*/
+.thesis .content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
