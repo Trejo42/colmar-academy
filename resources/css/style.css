@@ -3,34 +3,44 @@ body {
   font-size: 16px;
 }
 
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+
+
+  border: dotted 1px black;
+}
+
+
 /*Header*/
 header {
   display: flex;
   align-items: center;
   height: 4rem;
-  padding: 0 1.5rem;
   font-family: "work sans", helvetica, sans-serif;
   background-color: white;
 }
 
-header .header-div {
+header .logo {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
-header span {
+header .logo img {
+  width: 2.5rem;
+}
+
+header .logo span {
   font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 500;
+  text-transform: ;
 }
 
-header #green {
-  color: rgba(90, 215, 100, 1.0);
-}
-
-header nav {
-  position: absolute;
-  right: 1.5rem;
+header .logo #green {
+  color: rgba(19, 122, 29, .8);
 }
 
 header ul li {
@@ -38,108 +48,155 @@ header ul li {
   margin: 0 .5rem;
 }
 
+
 /*Banner*/
 .banner {
-  display: flex;
-  align-items: center;
-  font-family: "work sans", helvetica, sans-serif;
-  font-weight: bold;
-  color: rgba(100, 140, 150, 1);
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.banner img {
-  margin: 2rem 1.5rem;
+
+/*Banner Left Side*/
+.banner .left {
+  width: 60%;
 }
 
-.banner .banner-right {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: left;
-  margin: 0 24px;
-  text-align: left;
-}
-
-.banner .banner-right h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin: 1rem 0;
-  line-height: 3.5rem;
-}
-
-.banner .banner-right p {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  line-height: 1.8rem;
-}
-
-.banner .banner-right button {
+.banner .left img {
+  margin: 2rem 0;
   width: 100%;
-  margin: 1rem 0;
-  padding: 1rem;
-  font-weight: 600;
-  font-size: 1.2rem;
-  background-color: rgba(100, 140, 150, 1);
-  color: white;
-  border: none;
 }
+
+
+/*Banner Right Side*/
+.banner .right {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 2rem 1.5rem;
+  font-family: "work sans", helvetica, sans-serif;
+  color: rgb(19, 122, 29);
+}
+
+.banner .right h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.banner .right p {
+  padding: 2rem 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.banner .right button {
+  font-size: 1.1rem;
+  padding: .6rem 0;
+  border: none;
+  background-color: rgb(19, 122, 29);
+  color: white;
+  width: 80%;
+}
+
 
 /*Information Section*/
 .information {
-  display: flex;
+  color: rgb(19, 122, 29);
   font-family: "work sans", helvetica, sans-serif;
-  color: rgba(100, 140, 150, 1);
 }
 
-.information .sub-information {
-  display: flex;
-}
 
-.information #left {
-  padding: 2rem 1.5rem;
+/*Information Left Side*/
+.information .left {
   width: 60%;
-  border-right: solid 2px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+
+  border: dotted 1px blue;
 }
 
-.information #left h1 {
-  font-size: 3rem;
-  font-weight: bold;
+.information .left img {
+  width: 100%;
+}
+
+.information .left h1 {
+  font-size: 2rem;
+  font-weight: 700;
   padding-top: 2rem;
 }
 
-.information #right {
-  width: 40%;
-  padding: 2rem 0;
+.information .left p {
+  font-size: 0.9rem;
+  padding-top: 1.5rem;
+  width: 96%;
 }
 
-.information .sub-information img {
+.information .left p:last-child {
+  color: black;
+}
+
+
+/*Information Right Side*/
+.information .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 2rem 1.5rem;
+}
+
+.information .right .feature {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.information .right .feature .img {
   width: 35%;
   height: auto;
   padding: 1rem;
+
 }
 
-.information .sub-information .content {
-  display: flex;
-  flex-flow: column;
+.information .right .feature .img img {
+  width: 100%;
+}
+
+.information .right .feature .content {
   width: 65%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+
 }
 
-.information .sub-information .content h3 {
-  font-size: 1.2rem;
+.information .right .feature .content h3 {
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
-.information .sub-information .content span {
-  margin: .5rem 0;
-  line-height: 1.5rem;
+.information .right .feature .content span {
+  font-size: .8rem;
+  padding: .6rem 0;
 }
 
-.information .sub-information .content a {
+.information .right .feature .content a {
   text-decoration: none;
+  color: rgba(0, 0, 255, 1.0);
+  font-size: .9rem;
 }
 
-.information #lecture {
+.information .right #lecture {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*Start Learning*/
+.learning {
+  color: rgb(19, 122, 29);
+  font-family: "work sans", helvetica, sans-serif;
+}
+
+.learning .title h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
