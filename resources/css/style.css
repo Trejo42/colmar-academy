@@ -6,7 +6,6 @@ body {
 .container {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 1.5rem;
   display: flex;
 }
 
@@ -18,6 +17,10 @@ header {
   height: 4rem;
   font-family: "work sans", helvetica, sans-serif;
   background-color: white;
+}
+
+header .mobile {
+  display: none;
 }
 
 header .logo {
@@ -33,7 +36,6 @@ header .logo img {
 header .logo span {
   font-size: 1.2rem;
   font-weight: 500;
-  text-transform: ;
 }
 
 header .logo #green {
@@ -45,6 +47,25 @@ header ul li {
   margin: 0 .5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  header .logo {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  header .mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  header .mobile img {
+    width: 100%;
+  }
+}
 
 /*Banner*/
 .banner {
@@ -52,6 +73,31 @@ header ul li {
   font-family: "work sans", helvetica, sans-serif;
 }
 
+.banner .container {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2rem 0;
+}
+
+.banner .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner .desktop {
+    display: none;
+  }
+  .banner .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner .mobile .left {
+    width: 100%;
+  }
+  .banner .mobile .right {
+    width: 100%;
+  }
+}
 
 /*Banner Left Side*/
 .banner .left {
@@ -59,7 +105,6 @@ header ul li {
 }
 
 .banner .left img {
-  margin: 2rem 0;
   width: 100%;
 }
 
