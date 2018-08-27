@@ -489,7 +489,6 @@ header ul li {
   padding: 1rem;
 }
 
-
 .thesis .content .right .feature h3 {
   font-size: 1.1rem;
   font-weight: 500;
@@ -507,14 +506,18 @@ header ul li {
 /*Footer Section*/
 .footer {
   border-top: solid 1px rgba(0, 0, 0, 0.1);
-  color: rgba(90, 120, 80, 1.0);
+  color: black;
+  font-size: .9rem;
+  font-family: "work sans", helvetica, sans-serif;
+}
+
+.footer .mobile {
+  display: none;
 }
 
 .footer .container {
   height: 6rem;
   padding-top: 1rem;
-  font-size: .9rem;
-  font-family: "work sans", helvetica, sans-serif;
 }
 
 .footer .left {
@@ -527,4 +530,17 @@ header ul li {
 
 .footer .right p {
   word-spacing: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer .container {
+    display: none;
+  }
+  .footer {
+    border: none;
+  }
+  .footer .mobile {
+    display: block;
+    padding: 1rem;
+  }
 }
