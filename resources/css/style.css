@@ -97,6 +97,9 @@ header ul li {
   .banner .mobile .right {
     width: 100%;
   }
+  .banner .mobile .right button {
+
+  }
 }
 
 /*Banner Left Side*/
@@ -125,7 +128,7 @@ header ul li {
 }
 
 .banner .right p {
-  padding: 2rem 0;
+  padding: 1.8rem 0;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.8rem;
@@ -133,13 +136,18 @@ header ul li {
 
 .banner .right button {
   font-size: 1rem;
-  padding: .6rem 0;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  padding: 1rem 0;
   border: none;
   background-color: rgba(90, 120, 80, 1.0);
   color: white;
   width: 80%;
 }
 
+.banner .right button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
 /*Information Section*/
 .information {
@@ -148,6 +156,38 @@ header ul li {
   font-family: "work sans", helvetica, sans-serif;
 }
 
+.information .feature .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .information .container .left {
+    display: none;
+  }
+  .information .container .right {
+    border: none;
+    margin: 0;
+    width: 100%;
+  }
+  .information .container .right .desktop {
+    display: none;
+  }
+  .information .container .right .mobile {
+    display: flex;
+  }
+  .information .container .right .feature {
+    border: none;
+    flex-flow: nowrap column;
+    align-items: center;
+  }
+  .information .container .right .feature .mobile {
+    padding: 1rem;
+    width: 90%;
+  }
+  .information .container .right .feature .content {
+
+  }
+}
 
 /*Information Left Side*/
 .information .left {
